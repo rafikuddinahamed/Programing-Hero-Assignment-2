@@ -3,58 +3,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Nursary</title>
+  <title>Plants</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray">
  
-    <!--Top Header start-->
-    <!-- Top Header Bar -->
-<div class="bg-gray-100 text-sm text-gray-700 px-4 py-2 flex justify-between items-center flex-wrap">
-  <!-- Left Side: Address -->
-  <div class="w-full md:w-auto text-center md:text-left">
-    ১৭ এস আই রোড, নবীগঞ্জ, বন্দর, নারায়ণগঞ্জ, বাংলাদেশ
-  </div>
-  <!-- Right Side: Offer & Phone -->
-  <div class="w-full md:w-auto text-center md:text-right mt-1 md:mt-0">
-    ২০০০ টাকার উপরে অর্ডার করলে ডেলিভারী ফ্রি; ফোন: <a href="tel:01818971531" class="text-blue-600 font-semibold hover:underline">০১৮১৮৯৭১৫৩১</a>
-  </div>
-</div>
-<!--Top Header end-->
 
-
-
-<!-- Navbar start -->
-
-<header style="background-color: rgba(13, 66, 37, 0.945);" class=" text-white px-6 py-4 flex items-center justify-between">
-  <!-- Logo Section -->
-  <div class="flex items-center space-x-3">
-    <img src="./img/nurser.png" alt="নবীগঞ্জ নার্সারি" class="h-10">
-    <span class="text-xl font-bold">নবীগঞ্জ নার্সারি</span>
-  </div>
-
-  <!-- Navigation Links -->
-  <nav class="hidden md:flex space-x-6 text-sm font-medium">
-    <a href="#" class="hover:text-green-300">দোকান</a>
-    <a href="#" class="hover:text-green-300">সাধারণ জিজ্ঞাসা সমূহ</a>
-    <a href="#" class="hover:text-green-300">ক্যাটাগরি অনুসারে দেখুন</a>
+  <!-- Navbar -->
+  <nav class="flex justify-between items-center p-4 border-b border-gray-300">
+    <div class="text-xl font-bold"> Plants</div>
+    <ul class="hidden md:flex space-x-6 items-center">
+      <li><a href="#" class="hover:text-green-600">Home</a></li>
+      <li><a href="#" class="hover:text-green-600">Shop</a></li>
+      <li><a href="#" class="hover:text-green-600">Avout Us</a></li>
+      <li>
+        <button aria-label="Cart" class="flex items-center space-x-1 hover:text-green-600">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4" />
+          </svg>
+          <span>Cart($56)</span>
+        </button>
+      </li>
+    </ul>
+    <!-- Mobile Navbar -->
+    <div class="flex justify-between items-center w-full md:hidden">
+      <div class="text-xl font-bold">Simple Plants</div>
+      <button aria-label="Cart" class="flex items-center space-x-1 hover:text-green-600">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4" />
+        </svg>
+        <span>Cart</span>
+      </button>
+    </div>
   </nav>
 
-  <!-- Search Bar -->
-  <div class="flex items-center space-x-2">
-    <input type="text" placeholder="অনুসন্ধান" class="px-3 py-2 rounded-md text-black focus:outline-none">
-    <button class="bg-white text-green-900 p-2 rounded hover:bg-green-200">
-      🔍
-    </button>
-  </div>
-</header>
 
-<!-- Navbar end -->
+  
+  <!-- Banner -->
+  <section class="flex flex-col md:flex-row items-center px-6 md:px-20 py-12">
+    <div class="md:w-1/2 md:pr-12 text-left">
+      <h1 class="text-4xl font-bold mb-4">ALWAYS FRESH FLOWERS</h1>
+      <p class="text-gray-700 mb-6">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offter a wide variety of fresh flowers that are perfect for any occasion</p>
+    </div>
+    <div class="md:w-1/2">
+      <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=600&q=80" alt="Plant Banner" class="w-full rounded-lg" />
+    </div>
+  </section>
 
 
 
 
-
+  <!-- Plants Section -->
+  <section class="px-6 md:px-20 py-10">
+    <h2 class="text-3xl font-semibold text-center mb-2">Our Plants</h2>
+    <p class="text-center text-gray-600 mb-8">Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offter a wide variety of fresh flowers that are perfect for any occasion</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <!-- Repeat cards -->
+      <div class="border rounded-lg p-4 flex flex-col items-center">
+        <img src="https://rafikuddinahamed.github.io/nursary-Website/Image/%E0%A6%AC%E0%A6%A8%E0%A6%B8%E0%A6%BE%E0%A6%87-%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%B8-.jpg" alt="Plant 1" class="rounded-lg mb-3" />
+        <h3 class="font-semibold mb-1">Vonsai Plantes</h3>
+        <p class="text-green-600 font-bold mb-3">$25</p>
+        <button class="bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700 add-to-cart">Add to cart</button>
+      </div>
+      <div class="border rounded-lg p-4 flex flex-col items-center">
+        <img src="https://rafikuddinahamed.github.io/nursary-Website/Image/%E0%A6%8F%E0%A6%AD%E0%A6%BF%E0%A6%A8%E0%A6%BF%E0%A6%89-%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%B8-.jpg" alt="Plant 2" class="rounded-lg mb-3" />
+        <h3 class="font-semibold mb-1">Snake Plant</h3>
+        <p class="text-green-600 font-bold mb-3">$15</p>
+        <button class="bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700 add-to-cart">Add to cart</button>
+      </div>
+      <div class="border rounded-lg p-4 flex flex-col items-center">
+        <img src="https://rafikuddinahamed.github.io/nursary-Website/Image/%E0%A6%8F%E0%A6%AF%E0%A6%BC%E0%A6%BE%E0%A6%B0-%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%B8-.jpg" alt="Plant 3" class="rounded-lg mb-3" />
+        <h3 class="font-semibold mb-1">Air Plants</h3>
+        <p class="text-green-600 font-bold mb-3">$20</p>
+        <button class="bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700 add-to-cart">Add to cart</button>
+      </div>
+      <div class="border rounded-lg p-4 flex flex-col items-center">
+        <img src="https://rafikuddinahamed.github.io/nursary-Website/Image/%E0%A6%AA%E0%A6%BE%E0%A6%AE-%E0%A6%AA%E0%A7%8D%E0%A6%B2%E0%A6%BE%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%B8-.jpg" alt="Plant 4" class="rounded-lg mb-3" />
+        <h3 class="font-semibold mb-1">Pum Plants</h3>
+        <p class="text-green-600 font-bold mb-3">$18</p>
+        <button class="bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700 add-to-cart">Add to cart</button>
+      </div>
+      <!-- Add 4 more cards similarly for 8 total -->
+      <div class="border rounded-lg p-4 flex flex-col items-center">
+        <img src="https://images.unsplash.com/photo-1549887533-ec7b9937a38f?auto=format&fit=crop&w=200&q=60" alt="Plant 5" class="rounded-lg mb-3" />
+        <h3 class="font-semibold mb-1">Rubber Plant</h3>
+        <p class="text-green-600 font-bold mb-3">$22</p>
+        <button class="bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700 add-to-cart">Add to cart</button>
+      </div>
+      <div class="border rounded-lg p-4 flex flex-col items-center">
+        <img src="https://images.unsplash.com/photo-1516646255117-1a4f8fca7e17?auto=format&fit=crop&w=200&q=60" alt="Plant 6" class="rounded-lg mb-3" />
+        <h3 class="font-semibold mb-1">ZZ Plant</h3>
+        <p class="text-green-600 font-bold mb-3">$19</p>
+        <button class="bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700 add-to-cart">Add to cart</button>
+      </div>
+      <div class="border rounded-lg p-4 flex flex-col items-center">
+        <img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=200&q=60" alt="Plant 7" class="rounded-lg mb-3" />
+        <h3 class="font-semibold mb-1">Peace Lily</h3>
+        <p class="text-green-600 font-bold mb-3">$17</p>
+        <button class="bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700 add-to-cart">Add to cart</button>
+      </div>
+      <div class="border rounded-lg p-4 flex flex-col items-center">
+        <img src="https://images.unsplash.com/photo-1494949649109-ecfc67d8f54e?auto=format&fit=crop&w=200&q=60" alt="Plant 8" class="rounded-lg mb-3" />
+        <h3 class="font-semibold mb-1">Boston Fern</h3>
+        <p class="text-green-600 font-bold mb-3">$16</p>
+        <button class="bg-green-600 text-white px-4 py-1 rounded hover:bg-green-700 add-to-cart">Add to cart</button>
+      </div>
+    </div>
+  </section>
 
 
 </body>
